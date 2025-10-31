@@ -1,6 +1,7 @@
-from fastapi import FastAPI
-import uvicorn
+from fastapi import FastAPI # type: ignore
+import uvicorn # type: ignore
 from pydantic import BaseModel # type: ignore
+from enum import Enum
 
 app = FastAPI()
 
@@ -15,8 +16,15 @@ def health(num_input: int):
     else:
         return {"status": "unhealthy"}
 
+class Method(str, Enum):
+    add = "add"
+    subtract = "subtract"
+    multiply = "multiply"
+    divide = "divide"
+
+
 class CalculateRequest(BaseModel):
-    method: str
+    method: Method
     num1: float
     num2: float
 class CalculateResponse(BaseModel):
@@ -25,13 +33,13 @@ class CalculateResponse(BaseModel):
 
 @app.post(f"/calculate", response_model=CalculateResponse)
 def calculate(request: CalculateRequest)-> CalculateResponse:    
-    if  request.method == "add":
+    if  request.method == Method.add:
         result = request.num1 + request.num2
-    elif request.method == "subtract":
+    elif request.method == Method.subtract:
         result = request.num1 - request.num2
-    elif request.method == "multiply":
+    elif request.method == Method.multiply:
         result = request.num1 * request.num2
-    elif request.method == "divide":
+    elif request.method == Method.divide:
         result = request.num1 / request.num2
     return CalculateResponse(result=result)
 
