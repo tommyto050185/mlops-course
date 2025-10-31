@@ -1,0 +1,7 @@
+#### >>> Khắc phục lỗi python bị warning: reportMissingImports ở các thư viện <<< ###
+# ✅ Bước 1: kiểm tra python trong môi trường .venv
+which/where python
+# ✅ Bước 2. Chỉ định môi trường Python trong VSCode
+Mở Command Palette (Ctrl + Shift + P)
+Gõ: Python: Select Interpreter
+Chọn đúng Python của venv (thường nằm trong thư mục venv\Scripts\python.exe)

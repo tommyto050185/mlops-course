@@ -1,6 +1,6 @@
-from fastapi import FastAPI # type: ignore
-import uvicorn # type: ignore
-from pydantic import BaseModel # type: ignore
+from fastapi import FastAPI 
+import uvicorn
+from pydantic import BaseModel
 from enum import Enum
 
 app = FastAPI()
