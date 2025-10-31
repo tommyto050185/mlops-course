@@ -1,0 +1,15 @@
+creation_timestamp: 1761648221416
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1761648221416
+model_id: m-ca4f5fa20ec24825a6ae7f6b8abbba02
+name: housing_linear_regression_model_01
+run_id: ff33ed45a5f24b9c9713c8748bc59bb1
+run_link: ''
+source: mlflow-artifacts:/235716890089709284/models/m-ca4f5fa20ec24825a6ae7f6b8abbba02/artifacts
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/235716890089709284/models/m-ca4f5fa20ec24825a6ae7f6b8abbba02/artifacts
+user_id: null
+version: 2
