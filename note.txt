@@ -1,3 +1,6 @@
+### GITHUB giảng viên ###
+https://github.com/thanhdanh1803/mlops-course-students/tree/main/scripts
+
 #### >>> Khắc phục lỗi python bị warning: reportMissingImports ở các thư viện <<< ###
 # ✅ Bước 1: kiểm tra python trong môi trường .venv
 which/where python
