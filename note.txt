@@ -8,3 +8,4 @@ which/where python
 Mở Command Palette (Ctrl + Shift + P)
 Gõ: Python: Select Interpreter
 Chọn đúng Python của venv (thường nằm trong thư mục venv\Scripts\python.exe)
+
