@@ -9,3 +9,5 @@ Mở Command Palette (Ctrl + Shift + P)
 Gõ: Python: Select Interpreter
 Chọn đúng Python của venv (thường nằm trong thư mục venv\Scripts\python.exe)
 
+### BUILD DOCKER FILE ###
+docker build --platform linux/amd64 -t mlops:v1 .
