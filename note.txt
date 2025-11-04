@@ -9,5 +9,10 @@ Mở Command Palette (Ctrl + Shift + P)
 Gõ: Python: Select Interpreter
 Chọn đúng Python của venv (thường nằm trong thư mục venv\Scripts\python.exe)
 
+
+
+wsl -d Ubuntu #>>> powershell/cmd login wsl Ubuntu
 ### BUILD DOCKER FILE ###
 docker build --platform linux/amd64 -t mlops:v1 .
+### RUN DOCKER ###
+docker run -p8000:8000 mlops:v1
