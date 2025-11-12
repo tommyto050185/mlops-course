@@ -4,5 +4,6 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY scripts/   scripts/ 
 ENV PYTHONPATH=/app
-EXPOSE 8000
+### EXPOSE chỉ là descrioptive, không phải publish port ###
+EXPOSE 8000 
 CMD ["python3", "scripts/session_3/api.py"]

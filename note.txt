@@ -12,7 +12,14 @@ Chọn đúng Python của venv (thường nằm trong thư mục venv\Scripts\p
 
 
 wsl -d Ubuntu #>>> powershell/cmd login wsl Ubuntu
+
 ### BUILD DOCKER FILE ###
-docker build --platform linux/amd64 -t mlops:v1 .
-### RUN DOCKER ###
-docker run -p8000:8000 mlops:v1
+docker build --platform linux/amd64 -t mlops:v5 .
+
+### RUN DOCKER >>> manual ###
+docker run -p8000:8000 mlops:v5
+
+### push image to dockerhub
+docker login
+docker tag mlops:v5 tommyto050185/mlops:v5 ### doi tag de co the push len dockerhub personal
+docker push tommyto050185/mlops:v5
