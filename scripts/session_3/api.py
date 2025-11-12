@@ -55,7 +55,7 @@ def calculate(request: CalculateRequest)-> CalculateResponse:
 
 
 
-model = joblib.load("./housing_linear.joblib")
+
 class PredictRequest(BaseModel):
     avg_Area_Income: float
     avg_Area_House_Age: float
@@ -65,7 +65,8 @@ class PredictRequest(BaseModel):
 
 class PredictResponse(BaseModel):
     predicted_Price: float
-
+# build model truc tiep
+model = joblib.load("./housing_linear.joblib")
 @app.post(f"/predict", response_model=PredictResponse)
 def predict_house_price(request: PredictRequest)-> PredictResponse:   
     import pandas as pd
