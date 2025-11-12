@@ -3,6 +3,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY scripts/   scripts/ 
+COPY housing_linear.joblib housing_linear.joblib
 ENV PYTHONPATH=/app
 ### EXPOSE chỉ là descrioptive, không phải publish port ###
 EXPOSE 8000 
